@@ -4,7 +4,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import { connect } from 'react-redux'
 import * as actions from '../actions' 
-const Landing = () => <div> landing</div>;
+import Landing from './Landing';
+const Surveys = () => <div> survey</div>;
 
 class App extends Component{
 
@@ -16,8 +17,10 @@ class App extends Component{
 	return (
 		<BrowserRouter>
 			<div>
+
 				<Header />
 				<Route path="/" exact component={Landing} />
+				<Route path="/surveys" exact component={Surveys} />
 			</div>
 		</BrowserRouter>
   );
