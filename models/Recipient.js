@@ -1,9 +1,9 @@
-const mongoose=("mongoose")
-const { Scheama }=mongoose
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
-const recipientSchema=new Scheama({
-  email:String,
-  respond:{type:Boolean,default:false}
-})
+const recipientSchema = new Schema({
+	email: String,
+	respond: { type: Boolean, default: false }
+});
 
-module.exports=recipientSchema
+module.exports = recipientSchema;
