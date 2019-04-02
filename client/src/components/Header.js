@@ -15,7 +15,7 @@ class Header extends React.Component {
         return <li><a href="/auth/google">login with google</a></li>
       default :
         return [
-        <li><Payments /></li>,
+        <li ><Payments /></li>,
         <li className="ml-3">your credits: {this.props.auth.credits}</li>,
         <li><a href="/api/logout">logout</a></li>,
         ]
