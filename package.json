@@ -10,7 +10,8 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "post-build":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run buile --prefix client"
   },
   "license": "MIT",
   "dependencies": {
