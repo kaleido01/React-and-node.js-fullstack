@@ -2,7 +2,7 @@ const passport = require("passport");
 
 const baseURL =
 	process.env.NODE_ENV === "production"
-		? "https://manehabi02.herokuapp.com"
+		? "https://react-and-nodejs-fullstack-01.herokuapp.com/"
 		: "http://localhost:3000";
 
 module.exports = app => {
